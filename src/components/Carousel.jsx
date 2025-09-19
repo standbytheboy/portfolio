@@ -7,7 +7,7 @@ const Carousel = ({ items, RenderComponent }) => {
   const scrollLeft = () => {
     if (carouselRef.current) {
       carouselRef.current.scrollBy({
-        left: -300,
+        left: -350,
         behavior: "smooth",
       });
     }
@@ -16,7 +16,7 @@ const Carousel = ({ items, RenderComponent }) => {
   const scrollRight = () => {
     if (carouselRef.current) {
       carouselRef.current.scrollBy({
-        left: 300,
+        left: 350,
         behavior: "smooth",
       });
     }
@@ -25,14 +25,14 @@ const Carousel = ({ items, RenderComponent }) => {
   return (
     <section className="carousel-section">
       <div
-        className="cards-container flex items-center overflow-x-scroll gap-10 mx-auto my-0 py-10 "
+        className="cards-container flex items-center overflow-x-scroll gap-10 mx-auto my-0 py-10 scrollbar-none"
         ref={carouselRef}
       >
         {items.map((item, index) => (
           <RenderComponent key={index} item={item} />
         ))}
       </div>
-      <div className="carousel-nav">
+      <div className="carousel-nav flex gap-1.5">
         <button className="">
           <ArrowLeft onClick={scrollLeft} />
         </button>
