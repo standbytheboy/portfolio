@@ -19,13 +19,13 @@ function Header() {
         </h3>
 
         <ul className="flex justify-between gap-10">
-          <li className="bg-royalPurple py-2 px-5 rounded-md">HTML/CSS</li>
-          <li className="bg-royalPurple py-2 px-5 rounded-md">React</li>
-          <li className="bg-royalPurple py-2 px-5 rounded-md">JavaScript</li>
-          <li className="bg-royalPurple py-2 px-5 rounded-md">Tailwind</li>
-          <li className="bg-royalPurple py-2 px-5 rounded-md">Figma</li>
-          <li className="bg-royalPurple py-2 px-5 rounded-md">PHP</li>
-          <li className="bg-royalPurple py-2 px-5 rounded-md">SQL</li>
+          <li className="bg-[#462F9F] py-2 px-5 rounded-md">HTML/CSS</li>
+          <li className="bg-[#462F9F] py-2 px-5 rounded-md">React</li>
+          <li className="bg-[#462F9F] py-2 px-5 rounded-md">JavaScript</li>
+          <li className="bg-[#462F9F] py-2 px-5 rounded-md">Tailwind</li>
+          <li className="bg-[#462F9F] py-2 px-5 rounded-md">Figma</li>
+          <li className="bg-[#462F9F] py-2 px-5 rounded-md">PHP</li>
+          <li className="bg-[#462F9F] py-2 px-5 rounded-md">SQL</li>
         </ul>
       </main>
     </div>

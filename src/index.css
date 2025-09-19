@@ -3,10 +3,8 @@
   line-height: 1.5;
   font-weight: 400;
   background-color: #1E202C;
-
-
   color: #B8B8CA;
-
+  --royalPurple: #462F9F;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
