@@ -1,26 +1,34 @@
 import Carousel from "./Carousel";
 import ProjectCard from "./ProjectCard";
+import GardenMeImg from "/gardenme.png";
+import CalcImg from "/Calc.png";
+import TasksImg from "/Tasks.png";
+import SquareGameImg from "/SquareGame.png";
 
 const projects = [
   {
     title: "GardenMe",
     description:
       "E-commerce desenvolvido em ReactJs e PHP, com banco de dados MySQL. O diferencial empreendedor é que, ao adquirir plantas nessa plataforma, os clientes recebam automaticamente dicas de como cuidar de suas plantas.",
+    image: GardenMeImg,
   },
   {
-    title: "GardenMe",
+    title: "Calculadora",
     description:
-      "E-commerce desenvolvido em ReactJs e PHP, com banco de dados MySQL. O diferencial empreendedor é que, ao adquirir plantas nessa plataforma, os clientes recebam automaticamente dicas de como cuidar de suas plantas.",
+      "Exercício prático aplicando estudos iniciais em JavaScript e Display Grid.",
+    image: CalcImg,
   },
   {
-    title: "GardenMe",
+    title: "Lista de Tarefas",
     description:
-      "E-commerce desenvolvido em ReactJs e PHP, com banco de dados MySQL. O diferencial empreendedor é que, ao adquirir plantas nessa plataforma, os clientes recebam automaticamente dicas de como cuidar de suas plantas.",
+      "Projeto feito para praticar a manipulação do DOM utilizando JavaScript puro. O usuário pode adicionar, marcar como concluída e remover tarefas.",
+    image: TasksImg,
   },
   {
-    title: "GardenMe",
+    title: 'Jogo "Clique no Quadrado"',
     description:
-      "E-commerce desenvolvido em ReactJs e PHP, com banco de dados MySQL. O diferencial empreendedor é que, ao adquirir plantas nessa plataforma, os clientes recebam automaticamente dicas de como cuidar de suas plantas.",
+      'Jogo simples e divertido para usuários de todas as idades. As funções são ativadas ao clicar no botão "Iniciar Jogo" e testam a agilidade do jogador.',
+    image: SquareGameImg,
   },
 ];
 
@@ -33,7 +41,10 @@ const MyProjects = () => {
           Mesmo em formação, acredito que aprender se faz com prática. Aqui
           estão alguns projetos que venho desenvolvendo:
         </p>
-        <Carousel items={ projects } RenderComponent={({ item }) => <ProjectCard project={ item } />}/>
+        <Carousel
+          items={projects}
+          RenderComponent={({ item }) => <ProjectCard project={item} />}
+        />
       </div>
     </section>
   );

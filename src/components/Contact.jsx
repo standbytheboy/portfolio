@@ -3,22 +3,22 @@ import { ArrowUpRight, Envelope, GithubFill, InstagramFill, LinkedinBoxFill } fr
 const contactLinks = [
   {
     name: 'LinkedIn',
-    url: '#',
+    url: 'https://www.linkedin.com/in/lucas-morais-149556252/',
     icon: <LinkedinBoxFill size={36} />
   },
   {
-    name: 'Instagram',
-    url: '#',
-    icon: <InstagramFill size={36} />
-  },
-  {
     name: 'GitHub',
-    url: '#',
+    url: 'https://github.com/standbytheboy',
     icon: <GithubFill size={36} />
   },
   {
+    name: 'Instagram',
+    url: 'https://www.instagram.com/lusquinha_05/',
+    icon: <InstagramFill size={36} />
+  },
+  {
     name: 'Email',
-    url: 'mailto:seu-email@exemplo.com',
+    url: 'mailto:moraislcs05@gmail.com',
     icon: <Envelope size={36} />
   },
 ];
@@ -49,7 +49,10 @@ const Contact = () => {
                 {link.icon}
                 <span className="font-medium">{link.name}</span>
               </div>
-              <ArrowUpRight size={24} className="group-hover:text-white" />
+              <ArrowUpRight
+                size={24}
+                className="group-hover:text-white transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+              />
             </a>
           ))}
         </div>
@@ -57,7 +60,7 @@ const Contact = () => {
         {/* Rodapé */}
         <footer className="text-center text-[#B8B8CA] mt-20">
           <p>Obrigado por visitar esse site!</p>
-          <p className="text-sm">Feito por Lucas Morais</p>
+          <p className="mt-2 text-sm">Feito por Lucas Morais</p>
         </footer>
 
       </div>

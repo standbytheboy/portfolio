@@ -25,7 +25,7 @@ const Carousel = ({ items, RenderComponent }) => {
   return (
     <section>
       <div
-        className="cards-container flex items-center overflow-x-scroll gap-10 mx-auto my-0 py-10 scrollbar-none"
+        className="cards-container flex items-stretch overflow-x-scroll gap-10 mx-auto my-0 py-10 scrollbar-none"
         ref={carouselRef}
       >
         {items.map((item, index) => (
