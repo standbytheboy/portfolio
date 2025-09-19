@@ -9,10 +9,18 @@ function App() {
   return (
     <>
       <Header />
-      <MyProjects />
-      <Formation />
-      <AboutMe />
-      <Contact />
+      <section id="projects">
+        <MyProjects />
+      </section>
+      <section id="formation">
+        <Formation />
+      </section>
+      <section id="about-me">
+        <AboutMe />
+      </section>
+      <section id="contato">
+        <Contact />
+      </section>
     </>
   );
 }
