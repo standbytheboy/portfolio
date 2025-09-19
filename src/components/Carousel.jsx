@@ -23,7 +23,7 @@ const Carousel = ({ items, RenderComponent }) => {
   };
 
   return (
-    <section className="carousel-section">
+    <section>
       <div
         className="cards-container flex items-center overflow-x-scroll gap-10 mx-auto my-0 py-10 scrollbar-none"
         ref={carouselRef}
@@ -32,12 +32,12 @@ const Carousel = ({ items, RenderComponent }) => {
           <RenderComponent key={index} item={item} />
         ))}
       </div>
-      <div className="carousel-nav flex gap-1.5">
-        <button className="">
+      <div className="carousel-nav flex gap-10 justify-center items-center">
+        <button>
           <ArrowLeft onClick={scrollLeft} />
         </button>
 
-        <button className="">
+        <button>
           <ArrowRight onClick={scrollRight} />
         </button>
       </div>
