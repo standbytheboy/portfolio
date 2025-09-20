@@ -13,23 +13,14 @@ const technologies = [
 
 const Header = () => {
   return (
-    <div className="flex flex-col justify-center items-center text-center gap-20 pt-12 pb-24">
-      <nav>
-        <ul className="flex flex-wrap justify-center gap-8 md:gap-16">
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#formacao">Formação</a></li>
-          <li><a href="#sobre-mim">Sobre Mim</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-
-      <main className="flex flex-col items-center gap-5">
+    <main className="flex flex-col justify-center items-center text-center gap-20 pt-12 pb-24">
+      <div className="flex flex-col items-center gap-5">
         <h1 className="font-bold text-4xl sm:text-5xl">Lucas Morais</h1>
-        <h3 className="w-140 max-w-2xl m-auto scroll-mb-12 mb-12">
+        <p className="w-140 max-w-2xl m-auto scroll-mb-12 mb-12">
           Aqui você vai conhecer um pouco do que já estudei, dos projetos que
           estou desenvolvendo e da minha jornada no universo da programação.
           Seja bem-vindo(a)!
-        </h3>
+        </p>
 
         {/* Lista de tecnologias renderizada com map */}
         <ul className="flex flex-wrap justify-center gap-3 sm:gap-4">
@@ -43,8 +34,8 @@ const Header = () => {
             </li>
           ))}
         </ul>
-      </main>
-    </div>
+      </div>
+    </main>
   );
 }
 
