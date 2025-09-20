@@ -8,7 +8,7 @@
 
 Você pode visualizar o projeto em produção através do link abaixo:
 
-**[Clique aqui para acessar o portfólio]([https://portfolio-mu-sable-d16owukca0.vercel.app/])**
+**[Clique aqui para acessar o portfólio](https://portfolio-mu-sable-d16owukca0.vercel.app/)**
 
 ---
 
