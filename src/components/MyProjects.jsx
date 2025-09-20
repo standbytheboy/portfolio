@@ -1,16 +1,31 @@
 import Carousel from "./Carousel";
 import ProjectCard from "./ProjectCard";
-import GardenMeImg from "/gardenme.png";
-import CalcImg from "/Calc.png";
-import TasksImg from "/Tasks.png";
-import SquareGameImg from "/SquareGame.png";
+import GardenMeImg from "../assets/gardenme.png";
+import CalcImg from "../assets/Calc.png";
+import TasksImg from "../assets/Tasks.png";
+import SquareGameImg from "../assets/SquareGame.png";
+import NexusImg from "../assets/Nexus.png";
+import IdeaImg from "../assets/1dea.png";
+import ServicilyImg from "../assets/Servicily.png";
 
 const projects = [
+  {
+    title: "Nexus Studium",
+    description:
+      "Inicialmente projeto integrador de Front-end do Senac Lapa Tito, essa plataforma visa compartilhar vídeoaulas sobre quaisquer tópicos, e é voltada para a comunidade. Feita em HTML/CSS puro, depois refatorada para Angular e Back-end em produção.",
+    image: NexusImg,
+  },
   {
     title: "GardenMe",
     description:
       "E-commerce desenvolvido em ReactJs e PHP, com banco de dados MySQL. O diferencial empreendedor é que, ao adquirir plantas nessa plataforma, os clientes recebam automaticamente dicas de como cuidar de suas plantas.",
     image: GardenMeImg,
+  },
+  {
+    title: 'Jogo "Clique no Quadrado"',
+    description:
+      'Jogo simples e divertido para usuários de todas as idades. As funções são ativadas ao clicar no botão "Iniciar Jogo" e testam a agilidade do jogador.',
+    image: SquareGameImg,
   },
   {
     title: "Calculadora",
@@ -19,16 +34,22 @@ const projects = [
     image: CalcImg,
   },
   {
+    title: "1DEA",
+    description:
+    "Protótipo no Figma de app para empresas, que disponibiliza feedback e utilização de ideias de funcionários na produção.",
+    image: IdeaImg,
+  },
+  {
     title: "Lista de Tarefas",
     description:
       "Projeto feito para praticar a manipulação do DOM utilizando JavaScript puro. O usuário pode adicionar, marcar como concluída e remover tarefas.",
     image: TasksImg,
   },
   {
-    title: 'Jogo "Clique no Quadrado"',
+    title: "Servicily Landing Page",
     description:
-      'Jogo simples e divertido para usuários de todas as idades. As funções são ativadas ao clicar no botão "Iniciar Jogo" e testam a agilidade do jogador.',
-    image: SquareGameImg,
+      "Protótipo desenvolvido a fim de estudar a ferramenta AutoLayout no Figma. Créditos: 'dipauix' no Dribbble",
+    image: ServicilyImg,
   },
 ];
 
