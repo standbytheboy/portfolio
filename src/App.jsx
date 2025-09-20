@@ -20,7 +20,7 @@ function App() {
       <section id="about-me">
         <AboutMe />
       </section>
-      <section id="contato">
+      <section id="contact">
         <Contact />
       </section>
     </>
