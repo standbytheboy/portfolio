@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const educationData = [
   {
     institution: 'Senac Lapa Tito',
@@ -41,8 +43,29 @@ const educationData = [
   },
 ];
 
+const timelineVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { x: -50, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
 const TimelineItem = ({ item }) => (
-  <div className="relative flex items-start mb-12">
+  <motion.div className="relative flex items-start mb-12" variants={itemVariants}>
     {/* Conteúdo da Esquerda (Instituição e Data) */}
     <div className="w-1/3 text-right pr-12">
       <h3 className="font-bold text-lg text-[#B8B8CA]">{item.institution}</h3>
@@ -65,7 +88,7 @@ const TimelineItem = ({ item }) => (
         ))}
       </ul>
     </div>
-  </div>
+  </motion.div>
 );
 
 const Formation = () => {
@@ -76,7 +99,7 @@ const Formation = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#B8B8CA]">Formação</h2>
           <p className="text-slate-400 mt-4 max-w-2xl mx-auto">
-            Mesmo em formação, acredito que aprender se faz com prática. Aqui estão alguns projetos que venho desenvolvendo:
+            Minha jornada de aprendizado e desenvolvimento profissional.
           </p>
         </div>
 
@@ -85,11 +108,16 @@ const Formation = () => {
           {/* Linha Vertical */}
           <div className="absolute left-[33.33%] top-2 h-full w-0.5 bg-slate-700 transform -translate-x-1/2"></div>
           
-          <div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible" // Ativa a animação quando o elemento está na viewport
+            viewport={{ once: true, amount: 0.1 }} // A animação ocorre 1 vez, quando 10% do elemento estiver visível
+            variants={timelineVariants}
+          >
             {educationData.map((item, index) => (
               <TimelineItem key={index} item={item} />
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
