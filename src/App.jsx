@@ -2,26 +2,35 @@ import "./App.css";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Formation from "./components/Formation";
-import Header from "./components/Header";
+import Hero from "./components/Hero";
 import MyProjects from "./components/MyProjects";
 import Navbar from "./components/Navbar";
+import ScrollAnimation from "./components/ScrollAnimation";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Header />
+      <Hero />
       <section id="projects">
-        <MyProjects />
+        <ScrollAnimation>
+          <MyProjects />
+        </ScrollAnimation>
       </section>
       <section id="formation">
-        <Formation />
+        <ScrollAnimation>
+          <Formation />
+        </ScrollAnimation>
       </section>
       <section id="about-me">
-        <AboutMe />
+        <ScrollAnimation>
+          <AboutMe />
+        </ScrollAnimation>
       </section>
       <section id="contact">
-        <Contact />
+        <ScrollAnimation>
+          <Contact />
+        </ScrollAnimation>
       </section>
     </>
   );

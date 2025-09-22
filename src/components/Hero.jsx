@@ -11,7 +11,7 @@ const technologies = [
   { name: 'SQL', icon: <PostgresqlFill size={20} /> }
 ];
 
-const Header = () => {
+const Hero = () => {
   return (
     <main className="flex flex-col justify-center items-center text-center gap-16 md:gap-20 py-20 px-4">
       <div className="flex flex-col items-center gap-5">
@@ -41,4 +41,4 @@ const Header = () => {
   );
 }
 
-export default Header;
+export default Hero;

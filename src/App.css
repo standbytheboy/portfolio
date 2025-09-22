@@ -1,7 +1,6 @@
 @import "tailwindcss";
 :root {
   margin: 0 auto;
-  --royalPurple: #462F9F;
 }
 
 @layer base {
