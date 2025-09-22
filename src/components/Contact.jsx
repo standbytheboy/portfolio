@@ -1,4 +1,5 @@
 import { ArrowUpRight, Envelope, GithubFill, InstagramFill, LinkedinBoxFill } from 'akar-icons';
+import { motion } from 'framer-motion';
 
 const contactLinks = [
   {
@@ -27,23 +28,23 @@ const Contact = () => {
   return (
     <section className="text-[#B8B8CA] py-20 px-4 md:px-12">
       <div className="mx-auto max-w-6xl text-center">
-        
-        {/* Título e Subtítulo */}
+
         <h2 className="text-4xl md:text-5xl font-bold">Contato</h2>
         <p className="text-[#B8B8CA] mt-4 max-w-lg mx-auto">
           Quer conversar sobre tecnologia, colaborar em algum projeto ou só trocar uma ideia? Me chama!
         </p>
 
-        {/* Links de Contato */}
         <div className="flex flex-wrap justify-center gap-4 md:gap-6 mt-12">
           {contactLinks.map((link) => (
-            <a
+            <motion.a
               key={link.name}
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-between gap-4 w-full sm:w-60 border border-[#B8B8CA] rounded-lg px-6 py-3 
+              className="group flex items-center justify-between gap-4 w-full sm:w-60 border border-[#B8B8CA] rounded-lg px-6 py-3
                          hover:bg-[#ffffff15] hover:border-slate-500 transition-all duration-300"
+              whileHover={{ y: -5 }}
+              transition={{ duration: 0.1 }}
             >
               <div className="flex items-center gap-3 group-hover:text-white">
                 {link.icon}
@@ -53,11 +54,10 @@ const Contact = () => {
                 size={24}
                 className="group-hover:text-white transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
               />
-            </a>
+            </motion.a>
           ))}
         </div>
-        
-        {/* Rodapé */}
+
         <footer className="text-center text-[#B8B8CA] mt-20">
           <p>Obrigado por visitar esse site!</p>
           <p className="mt-2 text-sm">Feito por Lucas Morais</p>
