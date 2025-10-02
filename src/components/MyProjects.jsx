@@ -7,6 +7,8 @@ import SquareGameImg from "../assets/SquareGame.png";
 import NexusImg from "../assets/Nexus.png";
 import IdeaImg from "../assets/1dea.png";
 import ServicilyImg from "../assets/Servicily.png";
+import { useState } from "react";
+import ProjectModal from "./ProjectModal";
 
 const projects = [
   {
@@ -14,6 +16,8 @@ const projects = [
     description:
       "Inicialmente projeto integrador de Front-end do Senac Lapa Tito, essa plataforma visa compartilhar vídeoaulas sobre quaisquer tópicos, e é voltada para a comunidade. Feita em HTML/CSS puro, depois refatorada para Angular e Back-end em produção.",
     image: NexusImg,
+    liveURL: null,
+    repoURL: "https://github.com/standbytheboy/nexusStudiumRefatored"
   },
   {
     title: "GardenMe",
@@ -53,7 +57,18 @@ const projects = [
   },
 ];
 
+
 const MyProjects = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const handleOpenModal = (project) => {
+    setSelectedProject(project);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+  };
+
   return (
     <section className="py-16 bg-[#462F9F]">
       <div className="max-w-5xl mx-auto px-4">
@@ -64,9 +79,14 @@ const MyProjects = () => {
         </p>
         <Carousel
           items={projects}
-          RenderComponent={({ item }) => <ProjectCard project={item} />}
+          RenderComponent={({ item }) => (
+            <ProjectCard project={item} onOpenModal={handleOpenModal} />
+          )}
         />
       </div>
+      {selectedProject && (
+        <ProjectModal project={selectedProject} onClose={handleCloseModal} />
+      )}
     </section>
   );
 };

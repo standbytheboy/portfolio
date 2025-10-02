@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, onOpenModal }) => {
   return (
     <motion.div
       className="flex flex-col rounded-2xl shadow-md p-6 bg-[#31323C] min-w-[300px] w-[300px]"
@@ -12,7 +12,14 @@ const ProjectCard = ({ project }) => {
         <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
       </div>
 
-      <p className="text-sm flex-grow">{project.description}</p>
+      <p className="text-sm flex-grow mb-4">{project.description}</p>
+
+      <button
+        onClick={() => onOpenModal(project)}
+        className="mt-auto w-full bg-indigo-500 text-white font-semibold py-2 rounded-lg hover:bg-indigo-600 transition-colors duration-300"
+      >
+        Ver Detalhes
+      </button>
     </motion.div>
   );
 };
