@@ -16,44 +16,56 @@ const projects = [
     description:
       "Inicialmente projeto integrador de Front-end do Senac Lapa Tito, essa plataforma visa compartilhar vídeoaulas sobre quaisquer tópicos, e é voltada para a comunidade. Feita em HTML/CSS puro, depois refatorada para Angular e Back-end em produção.",
     image: NexusImg,
-    liveURL: null,
-    repoURL: "https://github.com/standbytheboy/nexusStudiumRefatored"
+    liveUrl: null,
+    repoUrl: "https://github.com/standbytheboy/nexusStudiumRefatored"
   },
   {
     title: "GardenMe",
     description:
       "E-commerce desenvolvido em ReactJs e PHP, com banco de dados MySQL. O diferencial empreendedor é que, ao adquirir plantas nessa plataforma, os clientes recebam automaticamente dicas de como cuidar de suas plantas.",
     image: GardenMeImg,
+    liveUrl: null,
+    repoUrl: "https://github.com/standbytheboy/gardenme"
   },
   {
     title: 'Jogo "Clique no Quadrado"',
     description:
       'Jogo simples e divertido para usuários de todas as idades. As funções são ativadas ao clicar no botão "Iniciar Jogo" e testam a agilidade do jogador.',
     image: SquareGameImg,
+    liveUrl: "https://standbytheboy.github.io/CliqueRapido/",
+    repoUrl: "https://github.com/standbytheboy/CliqueRapido"
   },
   {
     title: "Calculadora",
     description:
       "Exercício prático aplicando estudos iniciais em JavaScript e Display Grid.",
     image: CalcImg,
+    liveUrl: "",
+    repoUrl: ""
   },
   {
     title: "1DEA",
     description:
     "Protótipo no Figma de app para empresas, que disponibiliza feedback e utilização de ideias de funcionários na produção.",
     image: IdeaImg,
+    liveUrl: "https://www.figma.com/design/XjfQUgV62qVtJhM05NnCoo/1DEA?node-id=0-1&t=9Ziqg2XXeHz3fgiu-1",
+    repoUrl: ""
   },
   {
     title: "Lista de Tarefas",
     description:
       "Projeto feito para praticar a manipulação do DOM utilizando JavaScript puro. O usuário pode adicionar, marcar como concluída e remover tarefas.",
     image: TasksImg,
+    liveUrl: "",
+    repoUrl: ""
   },
   {
     title: "Servicily Landing Page",
     description:
       "Protótipo desenvolvido a fim de estudar a ferramenta AutoLayout no Figma. Créditos: 'dipauix' no Dribbble",
     image: ServicilyImg,
+    liveUrl: "https://www.figma.com/design/xpaAqFjPyEEpPgWIP0REWR/Servicily-Landing-Page?t=zDQh9xQcjHq7dw7i-1",
+    repoUrl: ""
   },
 ];
 
