@@ -40,8 +40,8 @@ const projects = [
     description:
       "Exercício prático aplicando estudos iniciais em JavaScript e Display Grid.",
     image: CalcImg,
-    liveUrl: "",
-    repoUrl: ""
+    liveUrl: "https://standbytheboy.github.io/UC3_TII09/projetos/calculadora/calculadora.html",
+    repoUrl: "https://github.com/standbytheboy/UC3_TII09/tree/main/projetos/calculadora"
   },
   {
     title: "1DEA",
@@ -56,8 +56,8 @@ const projects = [
     description:
       "Projeto feito para praticar a manipulação do DOM utilizando JavaScript puro. O usuário pode adicionar, marcar como concluída e remover tarefas.",
     image: TasksImg,
-    liveUrl: "",
-    repoUrl: ""
+    liveUrl: "https://standbytheboy.github.io/UC3_TII09/projetos/lista-tarefas/lista-tarefas.html",
+    repoUrl: "https://github.com/standbytheboy/UC3_TII09/tree/main/projetos/lista-tarefas"
   },
   {
     title: "Servicily Landing Page",
