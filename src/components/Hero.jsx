@@ -54,8 +54,8 @@ const Hero = () => {
               "Lucas Morais",
               3000,
               "", // Apaga
-              "Desenvolvedor Web",
-              2000,
+              "Professor de Desenvolvimento Web",
+              3000,
             ]}
             wrapper="h1"
             cursor={true}

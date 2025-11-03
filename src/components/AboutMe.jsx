@@ -21,21 +21,21 @@ const AboutMe = () => {
           <div className="mb-8">
             <h3 className="text-2xl font-bold mb-4">O que já estudei:</h3>
             <ul className="list-disc list-inside space-y-2 text-[#B8B8CA]">
-              <li>HTML5, CSS3 e JavaScript puro: a tríade essencial do frontend.</li>
-              <li>Bootstrap: pra acelerar layouts com responsividade.</li>
-              <li>Tailwind CSS: estilos com produtividade.</li>
-              <li>React: componentização e interfaces modernas.</li>
-              <li>PHP, C# e MySQL: estudando backend com foco prático.</li>
-              <li>Docker: usando conteinerização para fazer deploy de aplicações.</li>
+              <li className='text-[#B8B8CA]'><strong className='text-gray-300'>HTML5, CSS3 e JavaScript puro</strong>: a tríade essencial do frontend.</li>
+              <li className='text-[#B8B8CA]'><strong className='text-gray-300'>Bootstrap:</strong> pra acelerar layouts com responsividade.</li>
+              <li className='text-[#B8B8CA]'><strong className='text-gray-300'>Tailwind CSS:</strong> estilos com produtividade.</li>
+              <li className='text-[#B8B8CA]'><strong className='text-gray-300'>React e Angular:</strong> componentização e interfaces modernas.</li>
+              <li className='text-[#B8B8CA]'><strong className='text-gray-300'>PHP, C# e MySQL:</strong> estudando backend com foco prático.</li>
+              <li className='text-[#B8B8CA]'><strong className='text-gray-300'>Docker:</strong> usando conteinerização para fazer deploy de aplicações.</li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-2xl font-bold mb-4">Outros conhecimentos:</h3>
             <ul className="list-disc list-inside space-y-2 text-[#B8B8CA]">
-              <li>Informática avançada (Pacote Office, Windows, manutenção de sistemas).</li>
-              <li>Hardware: montagem, manutenção e funcionamento de computadores.</li>
-              <li>Redes? Só se for pra fugir delas 😂</li>
+              <li className='text-[#B8B8CA]'><strong className='text-gray-300'>Informática avançada</strong> (Pacote Office, Windows, manutenção de sistemas).</li>
+              <li className='text-[#B8B8CA]'><strong className='text-gray-300'>Hardware:</strong> montagem, manutenção e funcionamento de computadores.</li>
+              <li className='text-[#B8B8CA]'><strong className='text-gray-300'>Redes?</strong> Só se for pra fugir delas 😂</li>
             </ul>
           </div>
         </div>
