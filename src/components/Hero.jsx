@@ -1,5 +1,6 @@
 import { AngularFill, CssFill, FigmaFill, HtmlFill, JavascriptFill, PhpFill, PostgresqlFill, ReactFill } from 'akar-icons';
 import { motion } from 'framer-motion';
+import { FaDocker } from 'react-icons/fa';
 
 const technologies = [
   { name: 'HTML/CSS', icon: <HtmlFill size={20} /> },
@@ -9,7 +10,8 @@ const technologies = [
   { name: 'Tailwind', icon: <CssFill size={20} /> },
   { name: 'Figma', icon: <FigmaFill size={20} /> },
   { name: 'PHP', icon: <PhpFill size={20} /> },
-  { name: 'SQL', icon: <PostgresqlFill size={20} /> }
+  { name: 'SQL', icon: <PostgresqlFill size={20} /> },
+  { name: 'Docker', icon: <FaDocker size={20} /> }
 ];
 
 const containerVariants = {

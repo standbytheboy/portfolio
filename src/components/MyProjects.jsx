@@ -6,11 +6,21 @@ import TasksImg from "../assets/Tasks.png";
 import SquareGameImg from "../assets/SquareGame.png";
 import NexusImg from "../assets/Nexus.png";
 import IdeaImg from "../assets/1dea.png";
+import IzingImg from "../assets/Izing.png";
+import JuribotImg from "../assets/Juribot.png";
 import ServicilyImg from "../assets/Servicily.png";
 import { useState } from "react";
 import ProjectModal from "./ProjectModal";
 
 const projects = [
+  {
+    title: "Contribuição em ferramenta Open Source",
+    description:
+      "Izing é uma plataforma para gestão de atendimento multicanais centralizado. Contribuí resolvendo erros lógicos para possibilidade de deploy com o uso do Docker.",
+    image: IzingImg,
+    liveUrl: null,
+    repoUrl: "https://github.com/standbytheboy/izing"
+  },
   {
     title: "Nexus Studium",
     description:
@@ -26,6 +36,14 @@ const projects = [
     image: GardenMeImg,
     liveUrl: null,
     repoUrl: "https://github.com/standbytheboy/gardenme"
+  },
+  {
+    title: 'Juribot',
+    description:
+      'Chat que oferece orientações claras e acessíveis, ajudando pessoas a entenderem seus direitos de forma objetiva e conversacional, com uso de IA.',
+    image: JuribotImg,
+    liveUrl: "https://juribot-drab.vercel.app",
+    repoUrl: "https://github.com/standbytheboy/juribot"
   },
   {
     title: 'Jogo "Clique no Quadrado"',
