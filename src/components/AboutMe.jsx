@@ -25,7 +25,8 @@ const AboutMe = () => {
               <li>Bootstrap: pra acelerar layouts com responsividade.</li>
               <li>Tailwind CSS: estilos com produtividade.</li>
               <li>React: componentização e interfaces modernas.</li>
-              <li>PHP e MySQL: estudando backend com foco prático.</li>
+              <li>PHP, C# e MySQL: estudando backend com foco prático.</li>
+              <li>Docker: usando conteinerização para fazer deploy de aplicações.</li>
             </ul>
           </div>
 

@@ -1,17 +1,27 @@
-import { AngularFill, CssFill, FigmaFill, HtmlFill, JavascriptFill, PhpFill, PostgresqlFill, ReactFill } from 'akar-icons';
-import { motion } from 'framer-motion';
-import { FaDocker } from 'react-icons/fa';
+import {
+  AngularFill,
+  CssFill,
+  FigmaFill,
+  HtmlFill,
+  JavascriptFill,
+  PhpFill,
+  PostgresqlFill,
+  ReactFill,
+} from "akar-icons";
+import { motion } from "framer-motion";
+import { FaDocker } from "react-icons/fa";
+import { TypeAnimation } from 'react-type-animation';
 
 const technologies = [
-  { name: 'HTML/CSS', icon: <HtmlFill size={20} /> },
-  { name: 'React', icon: <ReactFill size={20} /> },
-  { name: 'Angular', icon: <AngularFill size={20} /> },
-  { name: 'JavaScript', icon: <JavascriptFill size={20} /> },
-  { name: 'Tailwind', icon: <CssFill size={20} /> },
-  { name: 'Figma', icon: <FigmaFill size={20} /> },
-  { name: 'PHP', icon: <PhpFill size={20} /> },
-  { name: 'SQL', icon: <PostgresqlFill size={20} /> },
-  { name: 'Docker', icon: <FaDocker size={20} /> }
+  { name: "HTML/CSS", icon: <HtmlFill size={20} /> },
+  { name: "React", icon: <ReactFill size={20} /> },
+  { name: "Angular", icon: <AngularFill size={20} /> },
+  { name: "JavaScript", icon: <JavascriptFill size={20} /> },
+  { name: "Tailwind", icon: <CssFill size={20} /> },
+  { name: "Figma", icon: <FigmaFill size={20} /> },
+  { name: "PHP", icon: <PhpFill size={20} /> },
+  { name: "SQL", icon: <PostgresqlFill size={20} /> },
+  { name: "Docker", icon: <FaDocker size={20} /> },
 ];
 
 const containerVariants = {
@@ -38,9 +48,21 @@ const Hero = () => {
         initial="hidden"
         animate="visible"
       >
-        <motion.h1 variants={itemVariants} className="font-bold text-4xl sm:text-5xl lg:text-6xl">
-          Lucas Morais
-        </motion.h1>
+        <motion.div variants={itemVariants}>
+          <TypeAnimation
+            sequence={[
+              "Lucas Morais",
+              3000,
+              "", // Apaga
+              "Desenvolvedor Web",
+              2000,
+            ]}
+            wrapper="h1"
+            cursor={true}
+            repeat={Infinity}
+            className="font-bold text-4xl sm:text-5xl lg:text-6xl"
+          />
+        </motion.div>
 
         <motion.p variants={itemVariants} className="max-w-2xl mb-12">
           Aqui você vai conhecer um pouco do que já estudei, dos projetos que
@@ -48,7 +70,10 @@ const Hero = () => {
           Seja bem-vindo(a)!
         </motion.p>
 
-        <motion.ul variants={containerVariants} className="flex flex-wrap justify-center gap-3 sm:gap-4">
+        <motion.ul
+          variants={containerVariants}
+          className="flex flex-wrap justify-center gap-3 sm:gap-4 max-w-[45rem]"
+        >
           {technologies.map((tech) => (
             <motion.li
               key={tech.name}
@@ -63,6 +88,6 @@ const Hero = () => {
       </motion.div>
     </main>
   );
-}
+};
 
 export default Hero;
